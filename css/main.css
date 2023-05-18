@@ -1,0 +1,157 @@
+/***********************************************************************************
+ *	CUSTOM FONTS
+ ***********************************************************************************/
+@font-face {
+  font-family: "museo_sans";
+  src: url("/fonts/museosans-300-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "museo_sans";
+  src: url("/fonts/museosans_500-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "museo_sans";
+  src: url("/fonts/museosans_700-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/***********************************************************************************
+ *	Boostrap Grid
+ ***********************************************************************************/
+@media (max-width: 575.98px) {
+  .program-intro .row {
+    flex-direction: column-reverse;
+  }
+}
+/***********************************************************************************
+ *	BASE RULES
+ ***********************************************************************************/
+body {
+  font-family: "museo_sans", sans-serif;
+  color: #003865;
+}
+
+.heading-secondary {
+  font-size: clamp(1rem, 12vw + 1rem, 1.5rem);
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+
+.separator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #003865;
+}
+.separator::before {
+  content: "";
+  height: 0.075rem;
+  background: #003865;
+  flex: 1;
+  margin: 0 1rem 0 0;
+}
+.separator::after {
+  content: "";
+  height: 0.075rem;
+  background: #003865;
+  flex: 1;
+  margin: 0 0 0 1rem;
+}
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  color: #003865;
+}
+@media (min-width: 480px) and (max-width: 767.98px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(1, auto 1fr);
+  }
+}
+.card__pic {
+  align-self: center;
+}
+
+.card-img,
+.card-img-top {
+  padding: 0.5rem;
+}
+
+.card-body {
+  padding: 1.5rem 0.5rem;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.benefit__desc {
+  text-align: center;
+}
+.benefit__heading {
+  font-size: 1.25rem;
+}
+
+.info-box {
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
+  border: 0.1rem solid #e2dfdf;
+}
+@media (max-width: 767.98px) {
+  .info-box {
+    flex-direction: column;
+  }
+}
+.info-box__icon {
+  margin: 0 1rem 0 0.5rem;
+}
+@media (max-width: 767.98px) {
+  .info-box__icon {
+    margin: 0 0 0.5rem 0;
+  }
+}
+.info-box__text {
+  margin-bottom: 0;
+}
+.info-box img {
+  align-self: flex-start;
+}
+
+/************************************************************************************
+ *	BUTTONS
+ ***********************************************************************************/
+@media (max-width: 575.98px) {
+  .btns-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .btns-group .modal-btn,
+  .btns-group .disabled-btn {
+    margin-bottom: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

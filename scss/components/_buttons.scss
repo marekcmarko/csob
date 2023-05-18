@@ -1,0 +1,17 @@
+/************************************************************************************
+ *	BUTTONS
+ ***********************************************************************************/
+.btns-group {
+	@include media-breakpoint-down(sm) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.modal-btn,
+	.disabled-btn {
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 1rem;
+		}
+	}
+}

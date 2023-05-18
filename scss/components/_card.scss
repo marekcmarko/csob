@@ -1,0 +1,20 @@
+.card {
+	border: none;
+	border-radius: 0.5rem;
+	color: #003865;
+
+	@media (min-width: 480px) and (max-width: 767.98px) {
+		display: grid;
+		grid-template-columns: repeat(1, auto 1fr);
+	}
+	&__pic {
+		align-self: center;
+	}
+}
+.card-img,
+.card-img-top {
+	padding: 0.5rem;
+}
+.card-body {
+	padding: 1.5rem 0.5rem;
+}

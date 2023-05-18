@@ -1,0 +1,12 @@
+.benefit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__desc {
+		text-align: center;
+	}
+	&__heading {
+		font-size: 1.25rem;
+	}
+}
